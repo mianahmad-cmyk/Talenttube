@@ -1,0 +1,42 @@
+.subscribe {
+  background: linear-gradient(135deg, #111 0%, #1c1c1c 100%);
+  color: #fff;
+  text-align: center;
+  padding: 100px 30px;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #facc15;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 1.1rem;
+  color: #ccc;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #facc15;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: #eab308;
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 1.3rem;
+}
