@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import styles from "../styles/Navbar.module.css";
 import { FaBars, FaTimes } from "react-icons/fa";
+import AdminLogin from "./AdminLogin"; // ⬅️ Import the new login form
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showAdminLogin, setShowAdminLogin] = useState(false); // ⬅️ For dropdown
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -11,6 +13,11 @@ const Navbar = () => {
 
   const closeMenu = () => {
     setMenuOpen(false);
+    setShowAdminLogin(false);
+  };
+
+  const toggleAdminLogin = () => {
+    setShowAdminLogin(!showAdminLogin);
   };
 
   return (
@@ -27,7 +34,13 @@ const Navbar = () => {
           <li><a href="#featured" onClick={closeMenu}>Featured</a></li>
           <li><a href="#why" onClick={closeMenu}>Why Us</a></li>
           <li><a href="#subscribe" onClick={closeMenu}>Subscribe</a></li>
-          <li><a href="/admin" onClick={closeMenu}>Admin</a></li>
+          <li>
+            <span onClick={toggleAdminLogin} style={{ cursor: 'pointer', color: 'white' }}>
+
+              Admin
+            </span>
+            {showAdminLogin && <AdminLogin />}
+          </li>
         </ul>
       </nav>
     </header>

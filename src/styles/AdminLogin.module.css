@@ -1,0 +1,45 @@
+.loginBox {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background: #1f1f1f;
+  padding: 16px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  z-index: 1000;
+  width: 240px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.loginBox input {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+  background: #2d2d2d;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
+.loginBox button {
+  width: 100%;
+  padding: 10px;
+  background: #facc15;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.loginBox button:hover {
+  background: #eab308;
+}
+
+.error {
+  color: #f87171;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  text-align: center;
+}
