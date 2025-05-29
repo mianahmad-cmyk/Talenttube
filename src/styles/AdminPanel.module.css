@@ -73,3 +73,14 @@
 .downloadBtn:hover {
   background-color: #eab308;
 }
+
+
+.deleteBtn {
+  margin-top: 1rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
